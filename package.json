@@ -1,15 +1,15 @@
 {
   "name": "mermaid.cli",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "Command-line interface for mermaid",
   "license": "MIT",
-  "repository": "git@github.com:mermaidjs/mermaid.cli.git",
+  "repository": "git@github.com:msde/mermaid.cli.git",
   "author": "Tyler Long <tyler4long@gmail.com>",
   "bin": {
     "mmdc": "./index.bundle.js"
   },
   "scripts": {
-    "upgrade": "yarn-upgrade-all && source copy_modules.sh",
+    "upgrade": "npm upgrade all && source copy_modules.sh",
     "prepublishOnly": "babel ./index.js --out-file ./index.bundle.js"
   },
   "dependencies": {
